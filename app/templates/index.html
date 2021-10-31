@@ -1,1 +1,10 @@
-<h1>{{news}}</h1>
+<body>
+    <h1>{{news}}</h1>
+    <!-- Popular movie section  -->
+    <h3> News</h3>
+     <ul>
+        {% for source in sources %}
+            <li>{{source.author }}</li>
+        {% endfor %}
+    </ul>
+</body>
