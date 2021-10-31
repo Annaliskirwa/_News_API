@@ -11,7 +11,7 @@ class MovieTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_news = News(12, "Apple", "Apple reaches 400 buyers", "https://Apple.com", "Top search", "USA", "English")
+        self.new_news = News(12,"Apple", "AppleInc","Apple releases Iphone","IPhoine was released today","https://Apple.com")
     def test_instance(self):
         self.assertTrue(isinstance(self.new_news,News))
 
