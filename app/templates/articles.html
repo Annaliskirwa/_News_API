@@ -1,16 +1,17 @@
 {% extends 'base.html'%}
 {% block content%}
+<body style="background-image: url(https://images.unsplash.com/photo-1635696893457-2457364904d7?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNDF8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
 <div class="container">
 
 	<!-- Popular movie section  -->
-        <h3> Top Headlines</h3>
+        <h3 style="color: crimson;"> Top Headlines</h3>
         {% for article_row in articles | batch(4)%}
 
 	        <div class="row">
 	       
 		        {% for article in article_row %}
 
-		        	<div class="col-md-3">
+		        	<div class="col-md-4">
 				        <div class="thumbnail">
 				        <a href="{{article.url}}" target="_blank">
 						      <img src="{{article.image}}" alt="{{article.title}}" class="img-responsive" styles="height:30px">
@@ -41,7 +42,7 @@
 	
 </div>
 
-
+</body>
 {%endblock%}
 
  

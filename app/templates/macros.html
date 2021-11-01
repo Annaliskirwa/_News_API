@@ -5,7 +5,7 @@
         	
 	        	
             {% for sources in source_row %}
-	            <div class="col-md-3">
+	            <div class="col-md-6">
 		           
 		            <div class="panel panel-default">
 						<div class="panel-heading">
@@ -18,7 +18,7 @@
 								{{ sources.description |truncate(100)}}
 
 							</p>
-							<a href="/sources/{{sources.id}}" class="btn btn-success btn-sm">Visit {{sources.name}}</a>
+							<a href="/sources/{{sources.id}}" class="btn btn-primary btn-sm">Visit {{sources.name}}</a>
 						</div>
 						
 		
