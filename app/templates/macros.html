@@ -9,16 +9,16 @@
 		           
 		            <div class="panel panel-default">
 						<div class="panel-heading">
-							<a href="/sources/{{sources.id}}">
+							<a style="color: crimson;" href="/sources/{{sources.id}}">
 							    {{ sources.name}}
 					        </a>
 						</div>
 						<div class="panel-body">
 							<p>
-								{{ sources.description |truncate(100)}}
+								{{ sources.description |truncate(150)}}
 
 							</p>
-							<a href="/sources/{{sources.id}}" class="btn btn-primary btn-sm">Visit {{sources.name}}</a>
+							<a href="/sources/{{sources.id}}" class="btn btn-danger btn-sm">Visit {{sources.name}}</a>
 						</div>
 						
 		
