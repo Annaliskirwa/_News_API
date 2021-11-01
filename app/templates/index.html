@@ -1,10 +1,36 @@
-<body>
-    <h1>{{news}}</h1>
-    <!-- Popular movie section  -->
-    <h3> News</h3>
-     <ul>
-        {% for technology in technology %}
-            <li>{{technology.title}}</li>
-        {% endfor %}
-    </ul>
-</body>
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+
+{% block content%}
+<div class="container">
+		<!-- Business News Section  -->
+        <h3> Top Business News Sources</h3>
+        <hr>
+
+        {{ macro.displaySourceList(sources)}}
+
+        <!-- Business News Section  -->
+         
+        <h3> Top Technology News Sources</h3>
+        <hr>
+
+        {{ macro.displaySourceList(technology_sources)}}
+
+        <!-- Entertainment News Section  -->
+         
+        <h3> Top Entertainment News Sources</h3>
+        <hr>
+
+        {{ macro.displaySourceList(entertainment_sources)}}
+
+        <!-- Entertainment News Section  -->
+         
+        <h3> Top Sports News Sources</h3>
+        <hr>
+
+        {{ macro.displaySourceList(sports_sources)}}
+	
+</div>
+
+
+{%endblock%}
