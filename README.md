@@ -23,7 +23,7 @@ The user can click on the article to read more about the news.
 ## Setup/Installation Requirements
 ### To interact with the News API web application:   
 * Have the latest version of browser installed  
-* Click on this <a href = "">link</a> to read news/articles from various sources  
+* Click on this <a href = "https://ann-news-api.herokuapp.com/">link</a> to read news/articles from various sources  
 
 ### To contribute to the web application project:  
 Make sure you have the following installed:  
